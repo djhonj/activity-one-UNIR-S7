@@ -39,7 +39,7 @@
             <div>
                 <strong class="me__hello">Hola, me llamo</strong> <!-- texto importante -->
                 <h1 class="me__title">John Doe</h1><!-- elemento de encabezado, usado mayormente para titulos -->
-                <p>
+                <p class="margin-bottom-2">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.
                 </p>
             </div>
@@ -75,9 +75,9 @@
         <section id="experience">
             <h1>Experiencia</h1>
             
-            <div>
-                <div><!-- trabajo -->
-                    <div class="display-flex align-items-center gap-1">
+            <div class="exp">
+                <div class="exp__work"><!-- trabajo -->
+                    <div>
                         <i class="fa-solid fa-suitcase"></i>
                         <h2>Trabajo</h2>
                     </div>
@@ -85,17 +85,26 @@
                     <div>
                         <ul>
                             <li>
-                                <p>Cargo 1</p>
-                                <p>Company - Country, City</p>
+                                <h3>Desarrollador Junior de Aplicaciones Móviles</h3>
+                                <p>TechWave - Madrid, España</p>
+                                <hr />
                             </li>
-                            <li></li>
-                            <li></li>
+                            <li>
+                                <h3>Líder de Proyecto de Desarrollo de Software</h3>
+                                <p>FutureSolutions - Barcelona, España</p>
+                                <hr />
+                            </li>
+                            <li>
+                                <h3>Gerente de Innovación y Desarrollo Tecnológico de</h3>
+                                <p>InnovApp - Valencia, España</p>
+                                <hr />
+                            </li>
                         </ul>
                     </div>
                 </div>
 
-                <div><!-- educacion -->
-                    <div class="display-flex align-items-center gap-1">
+                <div class="exp__education"><!-- educacion -->
+                    <div>
                         <i class="fa-solid fa-book"></i>
                         <h2>Educacion</h2>
                     </div>
@@ -103,11 +112,15 @@
                     <div>
                         <ul>
                             <li>
-                                <p>Titulo 1</p>
-                                <p>Institucion - Country, City</p>
+                                <h3>Universidad Tecnológica Nacional</h3>
+                                <p>Ingeniería en Sistemas Computacionales - Buenos Aires, Argentina</p>
+                                <hr />
                             </li>
-                            <li></li>
-                            <li></li>
+                            <li>
+                                <h3>Diplomado en Desarrollo de Aplicaciones Móviles</h3>
+                                <p>Universidad de Stanford - Stanford, Estados Unidos</p>
+                                <hr />
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -117,6 +130,105 @@
 
         <section id="project">
             <h1>Proyectos</h1>
+
+            <div>
+                <article class="card">
+                    <header class="card__header">
+                        <img />
+                    </header>
+                    <section class="card__body">
+                        <div class="card__title">
+                            <strong>EcoTrack</strong>
+                            <time>23/01/2020</time>
+                        </div>
+                        <p>
+                            Una aplicación móvil que ayuda a los usuarios a monitorear su huella de carbono diaria.
+                        </p>
+                        <button type="button" aria-label="Demo">Demo</button>
+                    </section>
+                </article>
+
+                <article class="card">
+                    <header class="card__header">
+                        <img />
+                    </header>
+                    <section class="card__body">
+                        <div class="card__title">
+                            <strong>FitLife</strong>
+                            <time>23/01/2020</time>
+                        </div>
+                        <p>
+                            Una aplicación de fitness que proporciona rutinas de ejercicio personalizadas y planes de nutrición.
+                        </p>
+                        <button type="button" aria-label="Demo">Demo</button>
+                    </section>
+                </article>
+
+                <article class="card">
+                    <header class="card__header">
+                        <img />
+                    </header>
+                    <section class="card__body">
+                        <div class="card__title">
+                            <strong>TravelBuddy</strong>
+                            <time>23/01/2020</time>
+                        </div>
+                        <p>
+                            Una app de planificación de viajes que permite a los usuarios organizar itinerarios, reservar vuelos y hoteles, y descubrir lugares de interés
+                        </p>
+                        <button type="button" aria-label="Demo">Demo</button>
+                    </section>
+                </article>
+
+                <article class="card">
+                    <header class="card__header">
+                        <img />
+                    </header>
+                    <section class="card__body">
+                        <div class="card__title">
+                            <strong>HealthSync</strong>
+                            <time>23/01/2020</time>
+                        </div>
+                        <p>
+                            Una aplicación que integra datos de varios dispositivos de salud y fitness, proporcionando un análisis completo del bienestar del usuario.
+                        </p>
+                        <button type="button" aria-label="Demo">Demo</button>
+                    </section>
+                </article>
+
+                <article class="card">
+                    <header class="card__header">
+                        <img />
+                    </header>
+                    <section class="card__body">
+                        <div class="card__title">
+                            <strong>EduQuest</strong>
+                            <time>23/01/2020</time>
+                        </div>
+                        <p>
+                            Una plataforma educativa que ofrece cursos interactivos y materiales de estudio en diversas disciplinas.
+                        </p>
+                        <button type="button" aria-label="Demo">Demo</button>
+                    </section>
+                </article>
+
+                <article class="card">
+                    <header class="card__header">
+                        <img />
+                    </header>
+                    <section class="card__body">
+                        <div class="card__title">
+                            <strong>SafeHome</strong>
+                            <time>23/01/2020</time>
+                        </div>
+                        <p>
+                            Una app de seguridad para el hogar que permite a los usuarios monitorear cámaras de seguridad, controlar sistemas de alarmas y recibir notificaciones en tiempo real sobre cualquier actividad sospechosa.
+                        </p>
+                        <button type="button" aria-label="Demo">Demo</button>
+                    </section>
+                </article>
+            </div>
+
         </section>
 
         <section id="contact">
