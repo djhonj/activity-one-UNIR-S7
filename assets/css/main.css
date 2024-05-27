@@ -1,0 +1,21 @@
+:root {
+    /* colores usados para el diseño principal */
+    --color-primary: #7f5656;
+    --color-primary-light: #FEF8F8;
+    --color-primary-light-200: #ebdddd;
+
+    /* colores para textos */
+    --color-text: #09090b;
+    --color-white: #fff;
+
+    /* tamaño de fuente para textos */
+    --text-size-xs: 10px;
+    --text-size-sm: 12px;
+    --text-size-md: 14px;
+    --text-size-lg: 18px;
+
+    /* tamaño de fuente para titulos */
+    --h1: 36px;
+    --h2: 30px;
+    --h3: 24px;
+}
