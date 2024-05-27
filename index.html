@@ -5,69 +5,127 @@
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;700&display=swap" as="style" />
     <!-- precarga libreria contenedora de iconos -->
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" as="style" />
-    
+    <!-- para identificar la codificacion de caracteres -->
     <meta charset="UTF-8">
+    <!-- controla la dimension y escala de la ventana grafica. hace que la pagina se vea a escala (adapte) del dispositivo donde se visualiza -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Jhon Jairo Diaz Martinez| UNIR Semestre 7</title>
+    <title>Portafolio | UNIR Semestre 7</title>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap" />
+    <!-- referencia estilos desde un repositorio externo a nuestro sitio web -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;700&display=swap" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/config.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
 </head>
 <body>
+    <!-- cabecera del sitio  -->
     <header class="header" id="home">
-        J (dentro de circulo) Jon Doe (logo navbar)
-        <nav>
-            <ul>
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#about-me">Sobre Mí</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#experience">Experiencia</a></li>
-                <li><a href="#contact">Contacto</a></li>
+        <nav class="nav"><!-- navegacion principal del sitio  -->
+            <!-- <i class="nav__brand">
+                <strong>John Doe</strong>
+            </i> -->
+            <ul class="nav__list"><!-- agrega una lista de elementos -->
+                <li class="nav__item">
+                    <a href="#home" class="nav__link">Inicio</a><!-- etiqueta anchor, usada para navegar en el sitio. incluye una ruta del siti para navegar a la seccion puntual -->
+                </li> <!-- elemento de la lista, puede contener otras etiquetas o texto -->
+                <li><a href="#about-me" class="nav__link">Sobre Mí</a></li>
+                <li><a href="#projects" class="nav__link">Proyectos</a></li>
+                <li><a href="#experience" class="nav__link">Experiencia</a></li>
+                <li><a href="#contact" class="nav__link">Contacto</a></li>
             </ul>
         </nav> 
 
-        <div>
+        <div><!-- etiqueta contenedora -->
             <div>
-                <p>
-                    <b>Hola, me llamo</b>
-                </p>
-                <h1 class="header__title"></h1>
+                <strong class="me__hello">Hola, me llamo</strong> <!-- texto importante -->
+                <h1 class="me__title">John Doe</h1><!-- elemento de encabezado, usado mayormente para titulos -->
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.
                 </p>
             </div>
-            <div>
-                <img src="assets/img/img-1.jpg" alt="Image Home" />
+            <div class="mg__container">
+                <img src="assets/img/img-1.jpg" alt="Image Home" class="me__img" /><!-- visualiza imagenes, contiene un atributo con texto alterno (alt) en caso que la imagen no carge y la accesibilidad sea mejor  -->
             </div>
         </div>
     </header>
 
-    <main>
-        <section id="about-me">
+    <main><!-- contenido principal de nuestro sitio -->
+        <section id="about-me"> <!-- diferencia las distintas secciones del sitio, incluye atributo id usado para poder ser referenciado y usado por la etiqueta anchor -->
             <h1>Sobre mí</h1>
             
             <div>
                 <div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. 
+                    <p><!-- parrafo -->
+                        Soy un desarrollador apasionado con una amplia experiencia en la creación de aplicaciones móviles innovadoras y funcionales. Durante más de una década, he trabajado en una variedad de proyectos, desde pequeñas aplicaciones independientes hasta complejas plataformas de servicios.
                     </p>
                     <p>
-                        Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. 
+                        Mi especialidad radica en la integración de tecnologías emergentes para mejorar la experiencia del usuario y optimizar el rendimiento de las aplicaciones.
                     </p>
                     <p>
-                        Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.
+                        Además de mis habilidades técnicas, me enorgullezco de mi capacidad para comunicarme eficazmente con los clientes y entender sus necesidades. Esta habilidad me ha permitido desarrollar aplicaciones que son no solo funcionales, sino también intuitivas y atractivas. 
                     </p>
                 </div>
 
-                <img src="assets/img/img-2.jpg" alt="Image About me" />
+                <div class="display-flex justity-content-center">
+                    <img src="assets/img/img-2.jpg" alt="Image About me" />
+                </div>
             </div>
         </section>
 
-        
+        <section id="experience">
+            <h1>Experiencia</h1>
+            
+            <div>
+                <div><!-- trabajo -->
+                    <div class="display-flex align-items-center gap-1">
+                        <i class="fa-solid fa-suitcase"></i>
+                        <h2>Trabajo</h2>
+                    </div>
+
+                    <div>
+                        <ul>
+                            <li>
+                                <p>Cargo 1</p>
+                                <p>Company - Country, City</p>
+                            </li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div><!-- educacion -->
+                    <div class="display-flex align-items-center gap-1">
+                        <i class="fa-solid fa-book"></i>
+                        <h2>Educacion</h2>
+                    </div>
+
+                    <div>
+                        <ul>
+                            <li>
+                                <p>Titulo 1</p>
+                                <p>Institucion - Country, City</p>
+                            </li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="project">
+            <h1>Proyectos</h1>
+        </section>
+
+        <section id="contact">
+            <h1>Contacto</h1>
+        </section>
     </main>
 
-    <footer>
-        Power by Jhon Diaz 
+    <footer> <!-- pie de pagina, contenedor de informacion -->
+        Power by Jhon Diaz (los textos usados son todos ficticios)
     </footer>
 </body>
 </html>

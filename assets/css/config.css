@@ -1,0 +1,81 @@
+/*configurar variables globales*/
+:root {
+    /* colores usados para el diseño principal */
+    --color-primary: #7f5656;
+    --color-primary-light: #FEF8F8;
+    --color-primary-light-200: #ebdddd;
+
+    /* colores para textos */
+    --color-black: #09090b;
+    --color-white: #fff;
+
+    /* tamaño de fuente para textos */
+    --text-size-xs: 12px;
+    --text-size-sm: 14px;
+    --text-size-md: 16px;
+    --text-size-lg: 18px;
+    --size-name: 48px;
+
+    /* tamaño de fuente para titulos */
+    --h1: 36px;
+    --h2: 30px;
+    --h3: 24px;
+}
+
+/* propiedades aplciadas a todas las etiquetas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*indica como se calculan las medidas de una etiqueta. el padding y margin se tienen en cuenta al momento de calcular el width y heiht de una etiqueta */
+    outline: 0;
+}
+
+html {
+    font-size: 62.5%; /* configurado para las unidades rem sean equivalentes a 10 px (1rem = 10px)  */
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    min-height: 100vh;
+    max-width: 200rem;
+    color: var(--color-black);
+    line-height: 1.2;
+    font-size: var(--text-size-md);
+    font-weight: 400;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    font-size: var(--h1);
+}
+
+h1:not(.me__title) {
+    text-align: center;
+}
+
+section {
+    padding: 2rem;
+    margin-bottom: 4rem;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    max-width: 20rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+p {
+    margin-bottom: 2rem;
+}

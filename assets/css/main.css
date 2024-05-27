@@ -1,21 +1,84 @@
-:root {
-    /* colores usados para el diseño principal */
-    --color-primary: #7f5656;
-    --color-primary-light: #FEF8F8;
-    --color-primary-light-200: #ebdddd;
+.header {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
 
-    /* colores para textos */
-    --color-text: #09090b;
-    --color-white: #fff;
+.nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
 
-    /* tamaño de fuente para textos */
-    --text-size-xs: 10px;
-    --text-size-sm: 12px;
-    --text-size-md: 14px;
-    --text-size-lg: 18px;
+.nav__brand {
+    margin-bottom: 2rem;
+}
 
-    /* tamaño de fuente para titulos */
-    --h1: 36px;
-    --h2: 30px;
-    --h3: 24px;
+.nav__brand-icon {
+    padding: 1rem;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-style: normal;
+    border-radius: 100%;
+    display: inline-block;
+}
+
+.nav__brand-icon::after {
+    content: 'J';
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav__item {
+
+}
+
+.nav__link {
+    padding-top: .2rem;
+    padding-right: 1rem;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.me__hello {
+    font-size: var(--text-size-lg);
+}
+
+.me__title {
+    font-size: var(--size-name);
+}
+
+.mg__container {
+    display: flex;
+    justify-content: center;
+}
+
+.me__img {
+    border-radius: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.justity-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.gap-1 {
+    gap: 1rem;
 }
