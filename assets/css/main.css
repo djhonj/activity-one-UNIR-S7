@@ -129,6 +129,10 @@ header * {
     gap: 4rem;
 }
 
+.contact a {
+    text-decoration: underline;
+}
+
 .contact__info {
     display: flex;
     flex-direction: column;
