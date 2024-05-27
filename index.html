@@ -45,7 +45,7 @@
             </ul>
         </nav> 
 
-        <div class="header__info"><!-- etiqueta contenedora -->
+        <div class="header__info"><!-- etiqueta contenedora, no es relevante en la semantica web -->
             <div>
                 <strong class="me__hello">Hola, me llamo</strong> <!-- texto importante -->
                 <h1 class="me__title">John Doe</h1><!-- elemento de encabezado, usado mayormente para titulos -->
@@ -142,7 +142,7 @@
             <h1>Proyectos</h1>
 
             <div class="cards">
-                <article class="card">
+                <article class="card"> <!-- elemento contenedor importante el la semantica web -->
                     <section class="card__body">
                         <div class="card__title">
                             <strong>EcoTrack</strong>
@@ -244,11 +244,11 @@
 
                 <div class="contact__form">
                     <form action="./" method="post"> <!-- etiqueta usada para enviar informacion-->
-                        <input type="text" name="name" placeholder="Nombre" required />
+                        <input type="text" name="name" placeholder="Nombre" required /> <!-- etiqueta de entrada de datos  -->
                         <input type="email" name="email" placeholder="Email" required />
-                        <textarea placeholder="Mensaje" rows="5"></textarea>
+                        <textarea placeholder="Mensaje" rows="5"></textarea> <!-- etiqueta de entrada de datos-->
 
-                        <button>Enviar</button>
+                        <button type="submit">Enviar</button>
                     </form>
                 </div> 
             </div>
