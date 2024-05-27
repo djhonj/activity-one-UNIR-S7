@@ -14,8 +14,13 @@
     <!-- referencia estilos desde un repositorio externo a nuestro sitio web -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;700&display=swap" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    
+    <!-- carga los estilos -->
     <link rel="stylesheet" href="./assets/css/config.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <!-- carga y aplica los estilos cuando el ancho del dispositivo sea mayor o igual a 992 pixeles -->
+    <link rel="stylesheet" media='screen and (min-width: 992px)' href="./assets/css/desktop.css" />
 </head>
 <body>
     <!-- cabecera del sitio  -->
@@ -35,7 +40,7 @@
             </ul>
         </nav> 
 
-        <div><!-- etiqueta contenedora -->
+        <div class="header__info"><!-- etiqueta contenedora -->
             <div>
                 <strong class="me__hello">Hola, me llamo</strong> <!-- texto importante -->
                 <h1 class="me__title">John Doe</h1><!-- elemento de encabezado, usado mayormente para titulos -->
@@ -50,7 +55,7 @@
     </header>
 
     <main><!-- contenido principal de nuestro sitio -->
-        <section id="about-me"> <!-- diferencia las distintas secciones del sitio, incluye atributo id usado para poder ser referenciado y usado por la etiqueta anchor -->
+        <section id="about-me" class="section-max"> <!-- diferencia las distintas secciones del sitio, incluye atributo id usado para poder ser referenciado y usado por la etiqueta anchor -->
             <h1>Sobre mí</h1>
             
             <div>
@@ -61,7 +66,7 @@
                     <p>
                         Mi especialidad radica en la integración de tecnologías emergentes para mejorar la experiencia del usuario y optimizar el rendimiento de las aplicaciones.
                     </p>
-                    <p>
+                    <p class="margin-bottom-2">
                         Además de mis habilidades técnicas, me enorgullezco de mi capacidad para comunicarme eficazmente con los clientes y entender sus necesidades. Esta habilidad me ha permitido desarrollar aplicaciones que son no solo funcionales, sino también intuitivas y atractivas. 
                     </p>
                 </div>
@@ -72,7 +77,7 @@
             </div>
         </section>
 
-        <section id="experience">
+        <section id="experience"> <!-- experiencia -->
             <h1>Experiencia</h1>
             
             <div class="exp">
@@ -128,14 +133,11 @@
 
         </section>
 
-        <section id="project">
+        <section id="project"> <!-- proyectos -->
             <h1>Proyectos</h1>
 
-            <div>
+            <div class="cards">
                 <article class="card">
-                    <header class="card__header">
-                        <img />
-                    </header>
                     <section class="card__body">
                         <div class="card__title">
                             <strong>EcoTrack</strong>
@@ -149,9 +151,6 @@
                 </article>
 
                 <article class="card">
-                    <header class="card__header">
-                        <img />
-                    </header>
                     <section class="card__body">
                         <div class="card__title">
                             <strong>FitLife</strong>
@@ -165,9 +164,6 @@
                 </article>
 
                 <article class="card">
-                    <header class="card__header">
-                        <img />
-                    </header>
                     <section class="card__body">
                         <div class="card__title">
                             <strong>TravelBuddy</strong>
@@ -181,9 +177,6 @@
                 </article>
 
                 <article class="card">
-                    <header class="card__header">
-                        <img />
-                    </header>
                     <section class="card__body">
                         <div class="card__title">
                             <strong>HealthSync</strong>
@@ -197,9 +190,6 @@
                 </article>
 
                 <article class="card">
-                    <header class="card__header">
-                        <img />
-                    </header>
                     <section class="card__body">
                         <div class="card__title">
                             <strong>EduQuest</strong>
@@ -213,9 +203,6 @@
                 </article>
 
                 <article class="card">
-                    <header class="card__header">
-                        <img />
-                    </header>
                     <section class="card__body">
                         <div class="card__title">
                             <strong>SafeHome</strong>
@@ -231,13 +218,51 @@
 
         </section>
 
-        <section id="contact">
+        <section id="contact"> <!-- contacto -->
             <h1>Contacto</h1>
+
+            <div class="contact">
+                <div class="contact__info">
+                    <div>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+57 912 345 6780</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>john.doe@exaple.com</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-map-marker"></i>
+                        <span>Calle Falsa 123, 28080 Colombia, Bogotá</span>
+                    </div>
+                </div>
+
+                <div class="contact__form">
+                    <form action="./" method="post"> <!-- etiqueta usada para enviar informacion-->
+                        <input type="text" name="name" placeholder="Nombre" required />
+                        <input type="email" name="email" placeholder="Email" required />
+                        <textarea placeholder="Mensaje" rows="5"></textarea>
+
+                        <button>Enviar</button>
+                    </form>
+                </div> 
+            </div>
+
         </section>
     </main>
 
     <footer> <!-- pie de pagina, contenedor de informacion -->
-        Power by Jhon Diaz (los textos usados son todos ficticios)
+        <h2>John Doe</h2>
+
+        <div class="margin-bottom-2 display-flex justity-content-center gap-1">
+            <a href="https://github.com/djhonj" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+        </div>
+
+        <p style="font-size: var(--text-size-xs);">Power by Jhon Diaz (los textos usados son todos ficticios)</p>
     </footer>
 </body>
 </html>

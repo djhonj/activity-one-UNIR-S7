@@ -1,0 +1,63 @@
+img {
+    max-width: 30rem;
+    height: auto;
+}
+
+section {
+    padding: 5rem 20rem;
+    margin-bottom: 0;
+}
+
+.section-max {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 3rem 10rem;
+}
+
+.header__info {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*hace referencia al primer div de .header__info*/
+.header__info > div:first-child {
+    width: 30%;
+}
+
+.nav {
+    align-items: end;
+}
+
+.nav__link {
+    padding-right: 2rem;
+}
+
+.exp {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 3rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+}
+
+.card {
+    display: flex;
+}
+
+.card__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact {
+    justify-content: center;
+}
